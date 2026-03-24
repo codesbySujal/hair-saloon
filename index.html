@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI SALON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        html {
+            width: 100%;
+            /* overflow-x: hidden; */
+            scroll-behavior: smooth;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: Roboto;
+            /* overflow-x: hidden; */
+        }
+
+        .main {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100vh;
+            background-color: lightblue;
+
+
+        }
+
+
+        .box1 {
+            width: 100%;
+            height: 100%;
+            /* background-image: url(./assets/image/_.jpeg); */
+            background-image: url(./assets/image/fondo\ para\ barbero.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            background-attachment: fixed;
+            /* opacity: 0.8; */
+        }
+
+        .black-screen {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.457);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 100px;
+
+        }
+
+        .header {
+            width: 85%;
+            height: 10%;
+            background-color: #3f3f3f65;
+            position: static;
+        }
+
+        .logoout {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, 0);
+            border-radius: 100%;
+            background-image: url(./assets/image/logo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .buttons {
+            width: 100%;
+            height: 10%;
+            background-color: rgba(0, 128, 0, 0);
+            text-align: center;
+            align-content: center;
+        }
+
+        button {
+            width: 20%;
+            height: 60%;
+            font-size: 150%;
+            font-weight: 600;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .home {
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0);
+            height: 80%;
+            display: flex;
+            justify-items: center;
+            justify-content: space-around;
+
+        }
+
+        .about {
+            width: 20%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            text-align: center;
+            /* align-content: center; */
+            font-size: 140%;
+        }
+
+        /* service div start  */
+        .service {
+            width: 100%;
+            height: 100vh;
+            background-color: red;
+        }
+
+        .header2 {
+            width: 100%;
+            height: 10%;
+            background-color: white;
+            text-align: center;
+            align-content: center;
+            font-size: 200%;
+        }
+
+        .boxes {
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+
+            /* display:flex; */
+        }
+
+        .div1 {
+            width: 100%;
+            height: 90%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+
+
+
+        .box2 {
+            width: 75%;
+            height: 60%;
+            background-color: rgb(3, 3, 3);
+            text-align: center;
+            align-content: center;
+            color: white;
+            border-radius: 5%;
+            border-top: orange 5px solid;
+        }
+
+        .span1 {
+            font-size: 120%;
+        }
+
+
+        /* .services end  */
+
+        /* about start */
+        .About {
+            width: 100%;
+            height: 100vh;
+            background-color: lightcyan;
+            display: flex;
+        }
+
+        .image1 {
+            width: 40%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .about-info {
+            width: 60%;
+            height: 100%;
+            background-color: white;
+            text-align: center;
+            align-content: center;
+        }
+
+        .span4 {
+            font-size: 150%;
+            font-weight: 600;
+        }
+
+        .para1 {
+            font-size: 110%;
+        }
+
+        /* about end  */
+
+        /* .Gallery start  */
+
+        .Gallery {
+            width: 100%;
+            height: 100vh;
+            background-color: red;
+        }
+
+        .header4 {
+            width: 100%;
+            height: 10%;
+            background-color: white;
+            text-align: center;
+            align-content: center;
+            font-size: 200%;
+        }
+
+        .line-box {
+            width: 100%;
+            height: 90%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+
+
+
+        .box4 {
+            width: 75%;
+            height: 80%;
+            background-color: rgb(3, 3, 3);
+            text-align: center;
+            align-content: center;
+            color: white;
+            border-radius: 5%;
+        }
+
+        /* content is start  */
+        .contact {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            /* display: flex; */
+        }
+
+        .header3 {
+            width: 100%;
+            height: 10%;
+            /* background-color: red; */
+            text-align: center;
+            align-content: center;
+            font-size: 200%;
+            /* color: white; */
+        }
+
+        .big-box {
+            width: 100%;
+            height: 80%;
+            /* background-color: purple; */
+            display: flex;
+        }
+
+        .address {
+            width: 50%;
+            height: 100%;
+            /* background-color: green; */
+            font-size: 150%;
+            /* color: white; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+        }
+
+        .link {
+            width: 100%;
+            height: 20%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+        }
+
+        .insta {
+            width: 100px;
+            height: 100px;
+            /* background-color: white; */
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map {
+            width: 50%;
+            height: 100%;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .show-map {
+            width: 85%;
+            height: 60%;
+            background-color: white;
+        }
+
+        .copyright {
+            width: 100%;
+            height: 10%;
+            /* background-color: orange; */
+            text-align: center;
+            align-content: center;
+        }
+
+        @media (max-width:477px) {
+            button {
+                width: 40%;
+            }
+
+            /* .box1{
+                background-image: url(./assets/image/_.jpeg);
+            } */
+            .service {
+                height: 150vh;
+            }
+
+            .boxes {
+                height: 90%;
+            }
+
+            .box2 {
+                width: 80%;
+                height: 60%;
+            }
+
+            .div1 {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                height: 100%;
+                align-items: start;
+            }
+
+            .About {
+                flex-direction: column;
+                height: 120vh;
+            }
+
+            .image1 {
+                width: 100%;
+            }
+
+            .about-info {
+                width: 100%;
+            }
+
+
+
+            .Gallery {
+                height: 180vh;
+            }
+
+            .box4 {
+                width: 70%;
+                height: 90%;
+            }
+
+            .line-box {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+
+
+.big-box{
+    flex-direction: column;
+}
+
+.address{
+    width: 100%;
+}
+
+.map{
+    width: 100%;
+}
+
+.show-map{
+    width: 90%;
+}
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Home section start -->
+    <div class="main" id="home">
+        <div class="box1">
+            <div class="black-screen">
+                <div class="header"><br>
+                    <!-- <hr> -->
+                    <hr>
+                    <div class="home">
+                        <div class="about"><a href="#Service">Service</a></div>
+                        <div class="about"><a href="#About">About</a></div>
+                        <div class="about"><a href="#Contact">Contact</a></div>
+                    </div>
+                </div>
+                <a href="#home">
+                    <div class="logoout"></div>
+                </a>
+                <div class="buttons">
+                    <button><a style="color: black;"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">Book
+                            Now</a></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Service  section start -->
+
+    <div class="service" id="   Service">
+        <div class="header2">Our Premium Service</div>
+        <div class="boxes">
+            <div class="div1">
+
+                <div class="box2">
+                    <!-- <div class="image1"></div> -->
+                    <h2><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">HAIR
+                            CUT</a></h2><br>
+                    <span class="span1"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">Expertly
+                            crafted haircuts tailored to your style and face shape.</a></span>
+                </div>
+                <div class="box2">
+                    <h2><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">BEARD
+                            CUT & SHAPE</a></h2><br>
+                    <span class="span1"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">Expertly
+                            crafted beardcut tailored to your style and face shape.</a></span>
+
+
+                    <!-- <div class="image1"></div> -->
+
+                </div>
+                <div class="box2">
+                    <h2><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">COLOURING</a>
+                    </h2><br>
+                    <span class="span1"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">Professional
+                            coloring with long-lasting, vibrant results.</a></span>
+                    <!-- <div class="image1"></div> -->
+
+                </div>
+                <div class="box2">
+                    <h2><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">MASSAGE</a>
+                    </h2><br>
+                    <span class="span1"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdnA6sAa5AFe4ja7kTk8tss5i9w5wAnAJmnveI1qhipnYd3FQ/viewform?usp=header">Relax
+                            and Mind Fresh</a></span>
+                    <!-- <div class="image1"></div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- service end  -->
+
+    <!-- about start  -->
+
+    <div class="About" id="About">
+        <div class="image1"><img
+                src="https://uploads-ssl.webflow.com/5dd6e22aa03136ba3a4a7088/5dd6fc791ad333182bb2639b_barber-chair.png"
+                width="100%" height="100%" alt=""></div>
+        <div class="about-info"><span class="span4">WE RESPECT THE HERITAGE OF CLASSIC
+                BARBERING.</span><br><br>
+            <span class="span4">. . . .</span><br><br>
+            <span class="span4">Haircuts & Beard Trims in Elgin</span>
+            <p class="para1">- PI Barbers is your local independent barber shop in Elgin. We specialise in various
+                grooming treatments from modern stylish haircuts & beard trims, we can also provide a more traditional
+                approach as well. </p>
+            <p class="para1">- We always aim to offer a friendly & enjoyable experience to all clientele.</p>
+            <p class="para1">- As well as taking cash payments for our services, we also accept card payment.</p>
+            <p class="para1"> - For easy booking simply click on book now to arrange an appointment via our booking
+                app, or contact us to check availability on walk in appointments.</p>
+
+        </div>
+    </div>
+    <!-- about end  -->
+
+    <!-- Gallery start -->
+    <div class="Gallery">
+        <div class="header4">Gallery</div>
+        <div class="line-box">
+            <div class="box4"></div>
+            <div class="box4"></div>
+            <div class="box4"></div>
+            <div class="box4"></div>
+            <div class="box4"></div>
+            <div class="box4"></div>
+        </div>
+    </div>
+
+    <!-- contact section is start  -->
+    <div class="contact" id="Contact">
+        <div class="header3"><u>CONTACT US</u></div>
+        <div class="big-box">
+            <div class="address">
+                <span>Address : <a style="color: black;" href="">Katol</a></span><br><br>
+                <span>Phone Number :<a style="color: black;" href="tel:9268634843"> 9268634843</a></span><br><br>
+                <span>Email : <a style="color: black;" href="emailto : king@gmail.com">king@gmail.com</a></span><br><br>
+                <div class="link">
+                    <div class="insta"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png" alt="" width="50%" height="50%"></div>
+                    <div class="insta"><img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/481/small/facebook-icon-free-png.png" alt="" width="50%" height="50%"></div>
+
+                </div>
+            </div>
+            <div class="map">
+                <div class="show-map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2050.742190342554!2d78.56423995012956!3d21.317080790735336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1774149466066!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+        <div class="copyright">© 2024 Luxe Hair Salon. All rights reserved. | Designed with ☠️ for luxury.</div>
+
+    </div>
+
+
+</body>
+
+</html>
